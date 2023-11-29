@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>        
+    <style>     
+        body{
+            display: flex;  
+        }   
         table{
             border-collapse: collapse;
         }        
@@ -12,7 +15,11 @@
             border:1px solid #000;
             padding:25px;
             background-color:#ccc;
-        }        
+            text-align: center;
+        }      
+        .izquierda{
+            margin-left: 10%;
+        }  
     </style>    
 </head>
 <body>
@@ -36,6 +43,26 @@
         <tr>
             <td>M</td>
             <td>N</td>
+            <td>P</td>
+        </tr>
+    </table>
+    <table class="izquierda">
+        <tr>
+            <td colspan="4">A,B,C,D</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>F</td>
+            <td rowspan="3"><P>G,</P><P>K,</P><P>O</P></td>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td>I</td>
+            <td>J</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td colspan="2">M, N</td>
             <td>P</td>
         </tr>
     </table>
